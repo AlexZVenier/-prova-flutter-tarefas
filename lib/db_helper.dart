@@ -6,7 +6,6 @@ import 'dart:io';
 import 'tarefa.dart'; 
 
 class DatabaseHelper {
-  // ⚠️ ATUALIZE SEU RA AQUI ⚠️
   static const String RA = '202310290'; 
   
   static const String _databaseName = 'tarefas_$RA.db';
@@ -27,7 +26,7 @@ class DatabaseHelper {
     return _database!;
   }
 
-  // MÉTODO createDatabase() - Requisito obrigatório para o print
+  // MÉTODO createDatabase()
   _initDatabase() async {
     // path_provider para obter o diretório de documentos
     Directory documentsDirectory = await getApplicationDocumentsDirectory();
